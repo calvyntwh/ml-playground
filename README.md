@@ -1,16 +1,12 @@
-Absolutely! Here’s a polished, professional, and concise `README.md` for your ML Playground project, tailored for clarity, quick onboarding, and best practices:
-
----
-
 # ML Playground 🚀
 
-A modern, Docker-based Python 3.13 machine learning environment-optimized for Apple Silicon (M1/M2), ready for JupyterLab, and fully integrated with VS Code Dev Containers.
+A modern, Docker-based Python 3.12 machine learning environment-optimized for Apple Silicon (M1/M2), ready for JupyterLab, and fully integrated with VS Code Dev Containers.
 
 ---
 
 ## ✨ Features
 
-- **Python 3.13 (slim, ARM64/AMD64)** - Fast, modern, and compatible with all major ML libraries.
+- **Python 3.12 (slim, ARM64/AMD64)** – Fast, modern, and compatible with all major ML libraries.
 - **Blazing-fast installs** with [uv](https://github.com/astral-sh/uv).
 - **Pre-installed ML/data science stack:** NumPy, pandas, scikit-learn, TensorFlow, PyTorch, matplotlib, seaborn, tqdm, and JupyterLab.
 - **JupyterLab** for interactive notebooks.
@@ -97,6 +93,7 @@ ml-playground/
 - **Update dependencies:** Edit `requirements.txt` and rebuild the Docker image as needed.
 - **For new packages:** Install them in `requirements.txt` for reproducibility.
 - **For Apple Silicon:** This setup is optimized for ARM64, but works on Intel Macs too.
+- **Note:** TensorFlow and some other ML libraries do not yet support Python 3.13. This environment uses Python 3.12 for maximum compatibility.
 
 ---
 
