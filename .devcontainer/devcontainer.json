@@ -1,0 +1,25 @@
+{
+	"name": "ML Playground",
+	"build": {
+	  "dockerfile": "../Dockerfile"
+	},
+	"customizations": {
+	  "vscode": {
+		"settings": {
+		  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+		  "python.linting.enabled": true,
+		  "jupyter.notebookFileRoot": "/app/notebooks"
+		},
+		"extensions": [
+		  "ms-python.python",
+		  "ms-toolsai.jupyter"
+		]
+	  }
+	},
+	"mounts": [
+	  "source=${localWorkspaceFolder}/notebooks,target=/app/notebooks,type=bind",
+	  "source=${localWorkspaceFolder}/data,target=/app/data,type=bind",
+	  "source=${localWorkspaceFolder}/scripts,target=/app/scripts,type=bind"
+	]
+  }
+  
